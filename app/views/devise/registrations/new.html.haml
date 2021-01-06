@@ -1,0 +1,35 @@
+.signup
+  .signup__title
+    = image_tag "title.png", class:"menu-title"
+  .signup__body
+    .signup__body__form
+      = form_with model: @user, url: user_registration_path, local: true do |f|
+        = render "devise/shared/error_messages", resource: @user
+        .signup__body__form__information
+          お な ま え
+        = f.text_field :nickname, placeholder: ' やまだたろう'
+        .signup__body__form__information
+          パ ス ワ ー ド
+        = f.password_field :password, placeholder: ' 7もじよりおおくにゅうりょくしてね' 
+        .signup__body__form__information
+          か く に ん
+        = f.password_field :password_confirmation, placeholder: ' パスワードをもういちどにゅうりょくしてね'
+        .signup__body__form__information
+          ね ん れ い
+        %select.signup__body__form__information__age{name: "age", type:"text"}
+          %option{value: ""} きみはなんさい？
+          %option{value: "1"} 1さい
+          %option{value: "2"} 2さい
+          %option{value: "3"} 3さい
+          %option{value: "4"} 4さい
+          %option{value: "5"} 5さい
+          %option{value: "6"} 6さい
+          %option{value: "7"} 7さい
+          %option{value: "8"} 8さい
+          %option{value: "9"} 9さい
+          %option{value: "10"} 10さい
+        .signup__body__form__submit
+          = f.submit 'とうろくする', class: "signup-btn"
+  .signup__footer
+    .signup__footer__character
+    .signup__footer__explanation
