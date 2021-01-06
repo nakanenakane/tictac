@@ -1,0 +1,40 @@
+.menu
+  .menu__header
+    .menu__header__title
+      = image_tag "title.png", class:"menu-title"
+    .menu__header__side
+      = image_tag "sun.png", class:"sun"
+  .menu__body
+    .menu__body__select
+      = link_to "#", class: "index-btn" do
+        .menu__body__select__image
+          = image_tag "kumo.png", class:"menu-btn"
+        .menu__body__select__word
+          かんたん
+      = link_to "#", class: "index-btn" do
+        .menu__body__select__image
+          = image_tag "kumo.png", class:"menu-btn"
+        .menu__body__select__word
+          ふつう
+      = link_to "#", class: "index-btn" do
+        .menu__body__select__image
+          = image_tag "kumo.png", class:"menu-btn"
+        .menu__body__select__word
+          むずかしい
+  .menu__footer
+    .menu__footer__select
+      = link_to "#", class: "index-btn" do
+        .menu__footer__select__image
+          = image_tag "house.png", class:"mypage"
+          .menu__footer__select__word
+            マイ
+            %br
+            ページ
+      = link_to "#", class: "index-btn" do
+        .menu__footer__select__image
+          = image_tag "mountain.png", class:"logout"
+          .menu__footer__select__word
+            ログ
+            %br
+            アウト
+    .menu__footer__grass
