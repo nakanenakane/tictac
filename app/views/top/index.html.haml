@@ -1,0 +1,23 @@
+.top
+  .top-header
+    .top-header__title
+      = link_to (image_tag ("title.png"), class:"title"), "#"
+  .top-body
+    = link_to  new_user_session_path, class: "index-btn" do
+      .top-body__select
+        = image_tag ("kumo.png"), class:"kumo-btn"
+        .top-body__select__word
+          ロ グ イ ン
+    = link_to new_user_registration_path, class: "index-btn" do
+      .top-body__select
+        = image_tag ("kumo.png"), class:"kumo-btn"
+        .top-body__select__word
+          と う ろ く
+    = link_to  "#", class: "index-btn" do
+      .top-body__select
+        = image_tag ("kumo.png"), class:"kumo-btn"
+        .top-body__select__word
+          お た め し
+  .top-footer
+    .top-footer__icon
+      = image_tag "watch-kun.png", size:"220x220"
