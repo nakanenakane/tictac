@@ -16,18 +16,8 @@
         = f.password_field :password_confirmation, placeholder: ' パスワードをもういちどにゅうりょくしてね'
         .signup__body__form__information
           ね ん れ い
-        %select.signup__body__form__information__age{name: "age", type:"text"}
-          %option{value: ""} きみはなんさい？
-          %option{value: "1"} 1さい
-          %option{value: "2"} 2さい
-          %option{value: "3"} 3さい
-          %option{value: "4"} 4さい
-          %option{value: "5"} 5さい
-          %option{value: "6"} 6さい
-          %option{value: "7"} 7さい
-          %option{value: "8"} 8さい
-          %option{value: "9"} 9さい
-          %option{value: "10"} 10さい
+        = f.select :age, [['1さい',1],['2さい',2],['3さい',3],['4さい',4],['5さい',5],['6さい',6],['7さい',7],['8さい',8],['9さい',9],['10さい',10],], {include_blank: 'き み は な ん さ い ？'}
+        .signup__body__form__age
         .signup__body__form__submit
           = f.submit 'とうろくする', class: "signup-btn"
   .signup__footer

@@ -62,3 +62,5 @@ gem 'haml-rails', '>=1.0', '<=2.0.1'
 gem 'active_hash'
 
 gem 'erb2haml'
+
+gem 'rails-i18n'
