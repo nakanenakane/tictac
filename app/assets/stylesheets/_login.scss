@@ -1,0 +1,96 @@
+.login{
+  height: 100vh;
+  width: 100vw;
+  background-image: url(back2.png);
+  &__title{
+    padding-top: 20px;
+    text-align: center;
+  }
+  &__signup{
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10px;
+    color: #1b1717c7;
+  }
+  &__body{
+    height: 54%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+  }
+
+  .login_box{
+    position:relative;
+    width:800px;
+    height:340px;
+    background:#FFFFFF;
+    padding:10px;
+    text-align:center;
+    border:3px solid #FFEC0A;
+    color:#FFFFFF;
+    font-size:30px;
+    border-radius:37px;
+    -webkit-border-radius:37px;
+    -moz-border-radius:37px;
+    opacity: .96;
+    &__form{
+      font-size: 25px;
+      color: black;
+      &__name{
+        margin-top: 10px;
+      }
+      &__password{
+        margin-top: 20px;
+      }
+      .login-btn{
+        margin-top: 30px;
+      }
+    }
+  }
+  .login_box:after,.login_box:before{
+    border: solid transparent;
+    content:'';
+    height:0;
+    width:0;
+    pointer-events:none;
+    position:absolute;
+    top:100%;
+    left:50%;
+  }
+  .login_box:after{
+    border-color: rgba(255, 255, 255, 0);
+    border-top-width:36px;
+    border-bottom-width:36px;
+    border-left-width:20px;
+    border-right-width:20px;
+    margin-left: -20px;
+    border-top-color:#FFFFFF;
+  }
+  .login_box:before{
+    border-color: rgba(255, 236, 10, 0);
+    border-top-width:41px;
+    border-bottom-width:41px;
+    border-left-width:23px;
+    border-right-width:23px;
+    margin-left: -23px;
+    margin-top: 3px;
+    border-top-color:#FFEC0A;
+  }
+  &__footer{
+    display: flex;
+    justify-content: center;
+    height: 30%;
+  }
+}
+
+.login-btn{
+  height: 70px;
+  width: 200px;
+  color: red;
+}
+
+.go-signup{
+  text-decoration: none;
+  color: red;
+}

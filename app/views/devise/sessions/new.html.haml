@@ -1,0 +1,24 @@
+.login
+  .login__title
+    = image_tag "title.png", class:"menu-title"
+  .login__signup
+    【とうろく】をまだしていないひとは ☞
+    =link_to new_user_registration_path(current_user), class: "go-signup" do
+      と う ろ く へ
+  .login__body
+    .login_box
+      .login_box__form
+        = form_with model: @user, url: session_path(resource_name), local: true do |f|
+          .login_box__form__name
+            お な ま え
+            %br/
+            = f.text_field :nickname, placeholder: 'や ま だ た ろ う', class: "login-holder"
+          .login_box__form__password
+            ぱ す わ ー ど
+            %br/
+            = f.password_field :password, autocomplete: "current-password", placeholder: 'パ ス ワ ー ド を い れ て ね', class: "login-holder"
+          - if devise_mapping.rememberable?
+            .actions--red
+              = f.submit "ログイン", class:"login-btn"
+  .login__footer
+    = image_tag "watch-kao.png", class:"login-watch"
