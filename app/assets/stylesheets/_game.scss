@@ -1,0 +1,66 @@
+.question{
+  height: 100vh;
+  display: flex;
+  background-image: url(back2.png);
+  &__main{
+    height: 100%;
+    width: 60%;
+    &__top{
+      height: 15%;
+      &__count{
+        height: 100%;
+        width: calc(100vh / 5);
+        margin-left: 20px;
+        background-color: honeydew;
+      }
+    }
+    &__title{
+      height: 10%;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 50px;
+      font-weight: bold;
+    }
+    &__clock{
+      height: 75%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__image{
+        height: 80%;
+        width: 60%;
+        background-color: rgb(31, 40, 58);
+      }
+    }
+  }
+  &__select{
+    height: 100%;
+    width: 40%;
+    &__top{
+      height: 15vh;
+      padding-top: 30px;
+      text-align: center;
+    }
+    &__choise{
+      height: calc(85vh / 3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__one{
+        height: 170px;
+        width: 450px;
+        background-color: red;
+      }
+      &__two{
+        height: 170px;
+        width: 450px;
+        background-color: deepskyblue;
+      }
+      &__three{
+        height: 170px;
+        width: 450px;
+        background-color: gold;
+      }
+    }
+  }
+}
