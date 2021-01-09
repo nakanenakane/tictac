@@ -1,0 +1,50 @@
+.mypage{
+  height: 100vh;
+  width: 100vw;
+  background-image: url(back2.png);
+  &__header{
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    &__user{
+      height: 100%;
+      width: 50%;
+      margin-left: 25%;
+      background-color: cornflowerblue;
+      &__title{
+        height: 50%;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        padding-top: 35px;
+        background-color: darkgreen;
+      }
+      &__place{
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: darkkhaki;
+        &__name{
+          height: 75%;
+          width: 80%;
+          background-color: darkorange;
+        }
+      }
+    }
+    &__edit{
+      height: 100%;
+      width: 15%;
+      background-color: crimson;
+      &__icon{}
+    }
+  }
+  &__body{
+    height: 10%;
+    background-color: cadetblue;
+  }
+  &__footer{
+    height: 65%;
+    background-color: yellow;
+  }
+}
