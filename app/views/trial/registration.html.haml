@@ -1,0 +1,25 @@
+.trial-registration
+  .trial-registration__top
+    .trial-registration__top__title
+      と う ろ く
+  .trial-registration__body
+    .trial-registration__body__btn
+      .trial-registration__body__btn__yes
+        =link_to new_user_registration_path do
+          = image_tag "kumo.png", class:"trial-btn"
+      .trial-registration__body__btn__yes__word
+        する
+    .trial-registration__body__btn
+      .trial-registration__body__btn__no
+        = image_tag "kumo.png", class:"trial-btn"
+      .trial-registration__body__btn__no__word
+        しない
+  .trial-registration__footer
+    .trial-registration__footer__left
+      .trial-registration__footer__left__explanation
+        とうろくすると スコアがついて
+        %br
+        %p 1 0 0 て ん になると
+        ボーナスゲームができるよ！
+    .trial-registration__footer__right
+      .trial-registration__footer__ight__icon

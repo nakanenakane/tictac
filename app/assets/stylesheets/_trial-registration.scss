@@ -1,0 +1,94 @@
+.trial-registration{
+  height: 100vh;
+  width: 100vw;
+  background-image: url(back2.png);
+  &__top{
+    height: 15%;
+    &__title{
+      text-align: center;
+      padding-top: 30px;
+      font-size: 50px;
+      font-weight: bold;
+    }
+  }
+  &__body{
+    height: 40%;
+    display: flex;
+    &__btn{
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__yes{
+        height: 80%;
+        width: 60%;
+        text-align: center;
+        margin-right: -10%;
+        &__word{
+          position: absolute;
+          font-size: 40px;
+          margin-left: 60px;
+          font-weight: bold;
+          text-align: center;
+          color: black;
+        }
+      }
+      &__no{
+        height: 80%;
+        width: 60%;
+        text-align: center;
+        margin-left: -10%;
+        &__word{
+          position: absolute;
+          font-size: 40px;
+          margin-right: 60px;
+          font-weight: bold;
+          text-align: center;
+          color: black;
+        }
+        &__word:hover{
+          opacity: .8;
+        }
+      }
+    }
+  }
+  &__footer{
+    height: 45%;
+    display: flex;
+    &__left{
+      height: 100%;
+      width: 80%;
+      &__explanation{
+        height: 70%;
+        width: 45%;
+        margin: 50px 10px 0 460px;
+        padding-top: 46px;
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        border: solid 3px #000000;
+        background-color: yellow;
+        p{
+          color: red;
+          font-size: 40px;
+        }
+      }
+    }
+    &__right{
+      height: 100%;
+      width: 20%;
+      background-color: darkgreen;
+      &__icon{}
+      }
+  }
+}
+
+.trial-btn{
+  height: 214px;
+  width: 412px;
+  margin-top: 20px;
+  border-radius: 20%;
+}
+.trial-btn:hover{
+  opacity: .8;
+}
