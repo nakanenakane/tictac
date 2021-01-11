@@ -21,16 +21,22 @@
           = image_tag "kumo.png", class:"menu-btn"
         .menu__body__select__word
           むずかしい
+    .menu__body__time
+      = link_to "#", class: "index-btn" do
+        .menu__body__time__image
+          = image_tag "kumo.png", class:"what-time-btn"
+        .menu__body__time__word
+          い ま な ん じ ？
   .menu__footer
     .menu__footer__select
       = link_to "#", class: "index-btn" do
         .menu__footer__select__image
-          = image_tag "house.png", class:"mypage"
+          = image_tag "house.png", class:"house"
           .menu__footer__select__word
             マイ
             %br
             ページ
-      = link_to "#", class: "index-btn" do
+      = link_to destroy_user_session_path, class: "index-btn", method: :delete do
         .menu__footer__select__image
           = image_tag "mountain.png", class:"logout"
           .menu__footer__select__word

@@ -7,11 +7,11 @@ Rails.application.routes.draw do
     get '/users/sign_out', to: 'devise/sessions#destroy'
   end
 
-  resources :top do
-    member do
-      get 'menu', to: 'top#menu'
-    end
-  end
+  resources :top, only: [:index] 
+
+  resources :menu, only:[:index]
+
+  resources :mypage, only: [:index, :show]
 
   resources :games do
     member do
@@ -21,7 +21,11 @@ Rails.application.routes.draw do
     end
   end
   
-  resources :trial , only: [:index]
+  resources :trial, only: [:index] do
+    collection do
+    get 'registration', to: 'trial#registration'
+    end
+  end  
 
   root 'top#index'
 
