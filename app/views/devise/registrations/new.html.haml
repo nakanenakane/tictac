@@ -16,7 +16,7 @@
         = f.password_field :password_confirmation, placeholder: ' パスワードをもういちどにゅうりょくしてね'
         .signup__body__form__information
           ね ん れ い
-        = f.select :age, [['1さい',1],['2さい',2],['3さい',3],['4さい',4],['5さい',5],['6さい',6],['7さい',7],['8さい',8],['9さい',9],['10さい',10],], {include_blank: 'き み は な ん さ い ？'}
+        = f.select :age, [['1さい',1],['2さい',2],['3さい',3],['4さい',4],['5さい',5],['6さい',6],['7さい',7],['8さい',8],['9さい',9],['10さい',10]], {include_blank: 'き み は な ん さ い ？'}
         .signup__body__form__age
         .signup__body__form__submit
           = f.submit 'とうろくする', class: "signup-btn"
