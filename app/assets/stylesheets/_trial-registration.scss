@@ -7,8 +7,10 @@
     &__title{
       text-align: center;
       padding-top: 30px;
-      font-size: 50px;
+      font-size: 70px;
       font-weight: bold;
+      font-family: 'Courier New', Courier, monospace;
+      color: black;
     }
   }
   &__body{
@@ -26,11 +28,12 @@
         margin-right: -10%;
         &__word{
           position: absolute;
-          font-size: 40px;
-          margin-left: 60px;
+          font-size: 50px;
+          margin-left: 11%;
           font-weight: bold;
           text-align: center;
           color: black;
+          bottom: 60%;
         }
       }
       &__no{
@@ -40,14 +43,12 @@
         margin-left: -10%;
         &__word{
           position: absolute;
-          font-size: 40px;
-          margin-right: 60px;
+          font-size: 50px;
+          margin-left:  11%;
           font-weight: bold;
           text-align: center;
           color: black;
-        }
-        &__word:hover{
-          opacity: .8;
+          bottom: 60%;
         }
       }
     }
@@ -91,4 +92,12 @@
 }
 .trial-btn:hover{
   opacity: .8;
+}
+
+.trial-registration__body__btn__yes__word:hover{
+  color: red;
+}
+
+.trial-registration__body__btn__no__word:hover{
+  color: blue;
 }
