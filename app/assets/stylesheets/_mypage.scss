@@ -10,25 +10,26 @@
       height: 100%;
       width: 50%;
       margin-left: 25%;
-      background-color: cornflowerblue;
       &__title{
         height: 50%;
         text-align: center;
         font-size: 40px;
         font-weight: bold;
         padding-top: 35px;
-        background-color: darkgreen;
       }
       &__place{
         height: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: darkkhaki;
         &__name{
           height: 75%;
           width: 80%;
-          background-color: darkorange;
+          text-align: center;
+          font-size: x-large;
+          margin: 2em 0;
+          border: double 5px #4ec4d3;
+          background-color: #ffffff;
         }
       }
     }
@@ -41,10 +42,77 @@
   }
   &__body{
     height: 10%;
-    background-color: cadetblue;
+    &__title{
+      text-align: center;
+      padding-top: 20px;
+      font-size: large;
+      color: rgb(39, 33, 25);
+    }
   }
   &__footer{
     height: 65%;
-    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__main{
+      height: 100%;
+      width: 80%;
+      &__score{
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 25vw;
+
+        &__total{
+          height: 100%;
+          width: 65%;
+          text-align: center;
+          margin-left: 40px;
+          font-size: 250px;
+          font-weight: bold;
+          color: rgb(241, 51, 26);
+        }
+        &__word{
+          height: 100%;
+          width: 15%;
+          text-align: center;
+          padding-top: 260px;
+          font-size: 50px;
+          font-weight: bold;
+          color: rgb(47, 27, 163);
+        }
+      }
+      &__back{
+        height: 20%;
+        margin-left: 20vw;
+        &__btn{
+          height: 50%;
+          width: 50%;
+          margin-left: 25%;
+          border-radius: 40px;
+          text-align: center;
+          padding-top: 5px;
+          font-size: 30px;
+          font-weight: bold;
+          border: 1px solid #465e5f;
+          cursor: pointer;
+          background-color: rgb(248, 235, 48);
+        }
+      }
+    }
+    &__side{
+      height: 100%;
+      width: 20%;
+      background-color: crimson;
+    }
   }
+}
+
+.menuback{
+  text-decoration: none;
+  color: rgb(9, 36, 36);
+}
+.mypage__footer__main__back__btn:hover{
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
 }

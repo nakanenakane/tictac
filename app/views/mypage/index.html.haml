@@ -5,14 +5,23 @@
         お な ま え
       .mypage__header__user__place
         .mypage__header__user__place__name
+          %h1="#{current_user.nickname} さん"
     .mypage__header__edit
       .mypage__header__edit__icon
   .mypage__body
     .mypage__body__title
+      %h1 ス コ ア の ご う け い
   .mypage__footer
-    .mypage__footer__score
-      .mypage__footer__score__total
-      .mypage__footer__score__back
-    .mypage__footer__character
-      .mypage__footer__character__dialogue
-      .mypage__footer__character__icon
+    .mypage__footer__main
+      .mypage__footer__main__score
+        .mypage__footer__main__score__total
+          ="#{current_user.score}"
+        .mypage__footer__main__score__word
+          てん
+      .mypage__footer__main__back
+        .mypage__footer__main__back__btn
+          =link_to menu_index_path, class:'menuback' do
+            も ど る
+    .mypage__footer__side
+      .mypage__footer__side__dialogue
+      .mypage__footer__side__icon
