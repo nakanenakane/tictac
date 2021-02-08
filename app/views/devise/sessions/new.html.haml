@@ -17,7 +17,6 @@
             ぱ す わ ー ど
             %br/
             = f.password_field :password, autocomplete: "current-password", placeholder: 'パ ス ワ ー ド を い れ て ね', class: "login-holder"
-          - if devise_mapping.rememberable?
             .actions--red
               = f.submit "ログイン", class:"login-btn"
   .login__footer

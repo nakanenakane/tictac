@@ -21,7 +21,7 @@ Rails.application.routes.draw do
     end
   end
   
-  resources :trial, only: [:index] do
+  resources :trial, only: [:index, :show] do
     collection do
     get 'registration', to: 'trial#registration'
     end

@@ -1,19 +1,17 @@
+require "csv"
+
+#trial_answers
+1.upto(10) do |n|
 Question.create!(
- [
-  {
-   questions: File.open('./app/assets/images/trial/trial_1.png'),
-   point: '0',
-   level_id: '4' }
- ]
-)
+   questions: open("db/trial/trial_#{n}.png","r+b"), point: '0', level_id: '4'
+  )
+end
 
-
-[
-  ['さんじ','correct','1'],
-  ['にじ','incorrect','1'],
-  ['じゅうじ','incorrect','1']
-].each do |content,is_answer,question_id|
-  Choise.create!(
-    { content:content, is_answer:is_answer, question_id:question_id}
+#trial_contents
+CSV.foreach('db/trial_choises.csv', headers: true) do |row|
+  Choise.create(
+    content: row['content'],
+    is_answer: row['is_answer'],
+    question_id: row['question_id'],
   )
 end

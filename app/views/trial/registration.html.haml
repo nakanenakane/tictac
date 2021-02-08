@@ -7,13 +7,14 @@
       .trial-registration__body__btn__yes
         =link_to new_user_registration_path do
           = image_tag "kumo.png", class:"trial-btn"
-      .trial-registration__body__btn__yes__word
-        する
+          .trial-registration__body__btn__yes__word
+            す る
     .trial-registration__body__btn
       .trial-registration__body__btn__no
-        = image_tag "kumo.png", class:"trial-btn"
-      .trial-registration__body__btn__no__word
-        しない
+        =link_to root_path do
+          = image_tag "kumo.png", class:"trial-btn"
+          .trial-registration__body__btn__no__word
+            しない
   .trial-registration__footer
     .trial-registration__footer__left
       .trial-registration__footer__left__explanation

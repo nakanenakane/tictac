@@ -1,9 +1,9 @@
 class CreateQuestions < ActiveRecord::Migration[6.0]
   def change
     create_table :questions do |t|
-      t.text :questions,:limit => 16777215, null: false
-      t.integer :point,               null: false
-      t.references :level,            null: false
+      t.blob :questions, null: false
+      t.references :level
+      t.integer :point
       t.timestamps
     end
   end
