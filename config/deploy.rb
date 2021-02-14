@@ -1,5 +1,4 @@
-# config valid only for current version of Capistrano
-# capistranoのバージョンを記載。固定のバージョンを利用し続け、バージョン変更によるトラブルを防止する
+# Gemfile.lockを見てcapistranoのバージョンを入れる
 lock '3.15.0'
 
 # Capistranoのログの表示に利用する
@@ -14,7 +13,7 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', '
 set :rbenv_type, :user
 set :rbenv_ruby, '2.6.5'
 
-# どの公開鍵を利用してデプロイするか
+
 set :ssh_options, auth_methods: ['publickey'],
                   keys: ['~/.ssh/tictac.pem>'] 
 
@@ -25,7 +24,6 @@ set :unicorn_pid, -> { "#{shared_path}/tmp/pids/unicorn.pid" }
 set :unicorn_config_path, -> { "#{current_path}/config/unicorn.rb" }
 set :keep_releases, 5
 
-# デプロイ処理が終わった後、Unicornを再起動するための記述
 after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
   task :restart do
