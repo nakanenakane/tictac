@@ -5,7 +5,6 @@ class TrialController < ApplicationController
     @choise = Choise.select("content")
     gon.questions = @questions
     gon.choise = @choise
-
   end
 
 end

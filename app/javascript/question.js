@@ -98,17 +98,12 @@ $(function(){
         }, 1000);
     });
     
-    // //もう一度挑戦するを押した時の処理
-    // quizArea.on('click', '.quiz_restart', function(){
-    //     quizReset();
-    // });
-    
     //リセットを行う関数
     function quizReset(){
         quizArea.html(quiz_html); //表示を元に戻す
         quiz_cnt = 0;
         quiz_success_cnt = 0;
-        //trialQuiz = arrShuffle(trialQuiz); //毎回出題の順番をシャッフルしたい場合はここのコメントを消してね
+        //trialQuiz = arrShuffle(trialQuiz); //シャッフル
         quizShow();
     }
     
@@ -133,19 +128,13 @@ $(function(){
         });
     }
     
-    //結果を表示する関数
-    function quizResult(){
-        quizArea.find('.question__main').hide();
-        var text = quiz_fin_cnt + '問中' + quiz_success_cnt + '問正解！';
-        if(quiz_fin_cnt === quiz_success_cnt){
-            text += '<br>全問正解おめでとう！';
-        }
-        text += '<br><input type="button" value="もう一度挑戦する" class="quiz_restart p-10">';
-        quizArea.find('.quiz_result').html(text);
-        quizArea.find('.quiz_result').show();
-    }
+    //結果表示
+    // function quizResult(){
+    //     quizArea.find('.question__main').hide();
+    //     var text = quiz_fin_cnt + '問中' + quiz_success_cnt + '問正解！';
+    // }
     
-    //配列をシャッフルする関数
+    //配列シャッフル
     function arrShuffle(arr){
         for(i = arr.length - 1; i > 0; i--){
             var j = Math.floor(Math.random() * (i + 1));

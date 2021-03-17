@@ -3,7 +3,7 @@ require "csv"
 #trial_answers
 1.upto(10) do |n|
 Question.create!(
-   questions: open("db/trial/trial_#{n}.png","r+b"), point: '0', level_id: '4'
+  questions: open("./app/assets/images/trial/trial_#{n}.png","r"), point: '0', level_id: '4'
   )
 end
 

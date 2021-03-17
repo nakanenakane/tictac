@@ -1,7 +1,7 @@
 class CreateQuestions < ActiveRecord::Migration[6.0]
   def change
     create_table :questions do |t|
-      t.blob :questions, null: false
+      t.text :questions, null: false
       t.references :level
       t.integer :point
       t.timestamps

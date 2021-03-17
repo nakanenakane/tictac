@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2020_12_13_120823) do
   end
 
   create_table "questions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.binary "questions", null: false
+    t.text "questions", null: false
     t.bigint "level_id"
     t.integer "point"
     t.datetime "created_at", precision: 6, null: false

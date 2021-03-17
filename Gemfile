@@ -79,3 +79,10 @@ gem 'react-rails'
 gem 'jquery-rails'
 
 gem 'gon'
+
+gem 'carrierwave'
+
+gem 'mini_magick'
+
+gem 'fog-aws'
+

@@ -18,6 +18,7 @@ Rails.application.routes.draw do
       get 'easy', to: 'games#easy'
       get 'normal', to: 'games#normal'
       get 'hard', to: 'games#hard'
+      get 'score', to: 'games#score'
     end
   end
   
