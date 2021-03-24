@@ -8,11 +8,22 @@
   &__main{
     height: 100vh;
     width: 86%;
-    background-color: aqua;
-    &__number{
+    &__balloon{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 70%;
       width: 100%;
-      background-color: yellow;
+      &__score{
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        margin: 0 69px 230px 0;
+        font-size: 130px;
+        font-weight: bold;
+        color: red;
+      }
     }
     &__under{
       height: 30%;
@@ -20,12 +31,16 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: yellowgreen;
       &__back-btn{
       height: 100px;
       width: 300px;
-      
-      background-color: aqua;
+      padding-top: 25px;
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      border-radius: 40px;
+      cursor: pointer;
+      background-color: rgb(23, 218, 49);
       }
      }
     }
@@ -34,4 +49,14 @@
     width: 14%;
     background-color: #ffff;
   }
+}
+
+.score__main__under__back-btn:hover{
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+  opacity: .8;
+}
+
+.scoreballoon{
+  height: 600px;
+  width: 650px;
 }

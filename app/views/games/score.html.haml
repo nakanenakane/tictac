@@ -1,6 +1,9 @@
 .score 
   .score__main
-    .score__main__number
+    .score__main__balloon
+      = image_tag "score.png", class:"scoreballoon"
+      .score__main__balloon__score
+        80
     .score__main__under
       =link_to root_path, class:'menuback' do
         .score__main__under__back-btn
